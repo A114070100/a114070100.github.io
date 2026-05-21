@@ -489,8 +489,10 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;      /* 稍微加粗一點（原 300 太細在深色背景會看不清） */
+    line-height: 1.8;      /* 重要：增加行高，文字才不會上下重疊 */
+    letter-spacing: 1px;   /* 增加字距，閱讀更舒服 */
 }
 
 .display-1 {
@@ -596,7 +598,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -8037,7 +8039,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: whitesmoke;
 }
 
 .text-secondary {
@@ -8128,7 +8130,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color:  #191966;
 }
 
 .bg-secondary {
@@ -10951,7 +10953,6 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
 }
 section.resume-section .resume-section-content {
   width: 100%;
